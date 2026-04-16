@@ -1,300 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>1win Prediction Signals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1win Signals</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
-:root{
---blue:#1a56db;
---blue2:#3b82f6;
---light:#f8fafc;
---border:#e2e8f0;
---text:#0f172a;
---muted:#64748b;
-}
-
 body{
 font-family:'Plus Jakarta Sans',sans-serif;
-background:var(--light);
-color:var(--text);
-}
-
-/* CONTAINER */
-.wrapper{
-max-width:1100px;
-margin:auto;
-background:#fff;
-min-height:100vh;
-}
-
-/* HEADER */
-.header{
 background:linear-gradient(135deg,#1e3a8a,#2563eb);
-text-align:center;
-padding:40px 20px;
 color:#fff;
-}
-
-.live{
-display:inline-flex;
+display:flex;
 align-items:center;
-gap:6px;
-background:rgba(255,255,255,0.15);
-padding:6px 14px;
-border-radius:20px;
-font-size:12px;
-margin-bottom:20px;
+justify-content:center;
+min-height:100vh;
+padding:20px;
 }
 
-.dot{
-width:8px;height:8px;border-radius:50%;
-background:#22c55e;
-animation:blink 1.2s infinite;
+/* MAIN BOX */
+.container{
+width:100%;
+max-width:420px;
+text-align:center;
 }
 
-@keyframes blink{
-50%{opacity:.3}
-}
-
+/* LOGO */
 .logo{
-width:90px;height:90px;
+width:90px;
+height:90px;
 border-radius:50%;
 overflow:hidden;
-margin:auto;
+margin:0 auto 20px;
 border:3px solid rgba(255,255,255,0.3);
-margin-bottom:12px;
 }
 
 .logo img{
-width:100%;height:100%;object-fit:cover;
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-.title{
+/* HEADING */
+h1{
 font-size:28px;
 font-weight:800;
+margin-bottom:8px;
 }
 
-.subtitle{
+.tag{
 font-size:13px;
 opacity:.8;
-margin-top:6px;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:1.5fr 1fr;
-gap:25px;
-padding:30px;
-}
-
-@media(max-width:900px){
-.grid{
-grid-template-columns:1fr;
-padding:20px;
-}
-}
-
-/* SECTION */
-.section{
 margin-bottom:25px;
 }
 
-.label{
-font-size:12px;
-text-transform:uppercase;
-color:var(--muted);
-margin-bottom:12px;
-font-weight:700;
-}
-
 /* OFFERS */
-.offer{
+.offers{
 display:flex;
-align-items:center;
-gap:12px;
+flex-direction:column;
+gap:10px;
+margin-bottom:25px;
+}
+
+.offer{
+background:rgba(255,255,255,0.1);
 padding:14px;
-border:1px solid var(--border);
 border-radius:12px;
-margin-bottom:10px;
-background:#f1f5f9;
-transition:.2s;
+font-weight:600;
+font-size:15px;
+backdrop-filter:blur(6px);
 }
 
-.offer:hover{
-background:#fff;
-transform:translateY(-2px);
-}
-
-.icon{
-font-size:22px;
-}
-
-.offer strong{
-font-size:18px;
-display:block;
-}
-
-/* STATS */
-.stats{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-}
-
-.stat{
-padding:15px;
-text-align:center;
-border:1px solid var(--border);
-border-radius:12px;
-background:#f1f5f9;
-}
-
-.stat b{
-display:block;
-font-size:18px;
-color:var(--blue);
-}
-
-/* FEATURES */
-.features{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-}
-
-.feature{
-padding:15px;
-text-align:center;
-border:1px solid var(--border);
-border-radius:12px;
-background:#f1f5f9;
-}
-
-/* CTA */
-.cta{
-text-align:center;
-padding:35px 20px;
-border-top:1px solid var(--border);
-}
-
+/* BUTTON */
 .btn{
 display:inline-block;
-background:linear-gradient(135deg,#1e3a8a,#1a56db);
-color:#fff;
-padding:16px 25px;
+width:100%;
+padding:16px;
 border-radius:12px;
+background:#fff;
+color:#1e3a8a;
 font-weight:700;
 text-decoration:none;
 transition:.3s;
-width:100%;
-max-width:350px;
+margin-bottom:20px;
 }
 
 .btn:hover{
 transform:translateY(-2px);
 }
 
-.trust{
-margin-top:15px;
+/* CREDIT */
+.credit{
 font-size:12px;
-color:var(--muted);
+opacity:.8;
 }
 
-/* MOBILE FIXES */
-@media(max-width:500px){
-.title{font-size:22px}
-.offer strong{font-size:16px}
+.credit a{
+color:#93c5fd;
+text-decoration:none;
+font-weight:600;
+}
+
+@media(max-width:400px){
+h1{font-size:24px}
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="wrapper">
-
-<!-- HEADER -->
-<div class="header">
-<div class="live"><span class="dot"></span> Free Signals</div>
+<div class="container">
 
 <div class="logo">
 <img src="https://fantasticczone.site/wp-content/uploads/2026/04/avviator.jpg">
 </div>
 
-<div class="title">1win Signals</div>
-<div class="subtitle">Elite Signal Provider</div>
+<h1>1win Signals</h1>
+<div class="tag">Elite Signal Provider</div>
+
+<div class="offers">
+<div class="offer">💰 7% Extra on Deposit</div>
+<div class="offer">🔄 10% Loss Cashback</div>
+<div class="offer">🏆 1% Withdrawal Bonus</div>
 </div>
 
-<!-- GRID -->
-<div class="grid">
+<a href="https://t.me/official_1wiin" target="_blank" class="btn">
+Join Telegram Channel
+</a>
 
-<!-- LEFT -->
-<div>
-
-<div class="section">
-<div class="label">Bonuses</div>
-
-<div class="offer">
-<div class="icon">💰</div>
-<div><strong>7% Deposit</strong> Extra on deposit</div>
-</div>
-
-<div class="offer">
-<div class="icon">🔄</div>
-<div><strong>10% Cashback</strong> On losses</div>
-</div>
-
-<div class="offer">
-<div class="icon">🏆</div>
-<div><strong>1% Bonus</strong> On withdrawal</div>
-</div>
-
-</div>
-
-</div>
-
-<!-- RIGHT -->
-<div>
-
-<div class="section">
-<div class="label">Stats</div>
-
-<div class="stats">
-<div class="stat"><b>587+</b>Members</div>
-<div class="stat"><b>24/7</b>Signals</div>
-<div class="stat"><b>Free</b>Access</div>
-</div>
-</div>
-
-<div class="section">
-<div class="label">Features</div>
-
-<div class="features">
-<div class="feature">✈️ Aviator</div>
-<div class="feature">📈 Insights</div>
-<div class="feature">🎯 Accuracy</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- CTA -->
-<div class="cta">
-<a href="https://t.me/official_1wiin" class="btn">Join Telegram</a>
-
-<div class="trust">
-✅ Verified | 🛡 Secure | 💎 Premium Signals
-</div>
-</div>
+<p class="credit">
+Ads by <a href="https://t.me/+TRlJl628l-FkMWE9" target="_blank" rel="noopener">@Nexgroww_agency</a>
+</p>
 
 </div>
 
